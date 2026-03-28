@@ -28,7 +28,7 @@ class GeminiLiveClient(private val apiKey: String) {
             // 1. Send Setup Message
             val setupMessage = GeminiSetupMessage(
                 setup = SetupConfig(
-                    model = "models/gemini-2.0-flash-exp",
+                    model = "models/gemini-3.1-flash-native-audio-preview",
                     generationConfig = GenerationConfig(
                         responseModalities = listOf("AUDIO")
                     ),
