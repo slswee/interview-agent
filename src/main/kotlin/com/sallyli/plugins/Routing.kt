@@ -18,7 +18,7 @@ fun Application.configureRouting() {
         maxFrameSize = Long.MAX_VALUE
         masking = false
     }
-    val apiKey = System.getenv("GEMINI_API_KEY") ?: "dummy"
+    val apiKey = System.getenv("GEMINI_API_KEY") ?: "testAPIKey"
     val geminiClient = GeminiLiveClient(apiKey)
 
     routing {
